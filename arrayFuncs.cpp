@@ -40,15 +40,15 @@ std::string arrayToString(int a[], int size) {
 
 int indexOfMax(int *a, int n) {
   assert(n >= 1);
-  int largest=0;
-  int largest_index=a[0];
+  int largest=a[0];
+  int largest_index=0;
   for (int i=1; i<n; i++){
     if(a[i]>largest){
       largest=a[i];
       largest_index=i;
     }
   }
-  return largest_index; // STUB !!! Remove and replace with correct code
+  return largest_index;
 }
 
 // indexOfMin
@@ -61,15 +61,15 @@ int indexOfMax(int *a, int n) {
 
 int indexOfMin(int *a, int n) {
   assert(n >= 1);
-  int smallest=0;
-  int smallest_index=a[0];
+  int smallest=a[0];
+  int smallest_index=0;
   for (int i=1; i<n; i++){
     if(a[i]<smallest){
       smallest=a[i];
       smallest_index=i;
     }
   }
-  return smallest_index; // STUB !!! Remove and replace with correct code
+  return smallest_index;
 }
 
 // swap
@@ -77,8 +77,7 @@ int indexOfMin(int *a, int n) {
 //  swap the values of a[i] and a[j]
 
 void swap(int *a, int i, int j) {
-  int num=0;
-  num=a[i];
+  int num=a[i];
   a[i]=a[j];
   a[j]=a[i];
   // save the old value of a[i] in a variable 
