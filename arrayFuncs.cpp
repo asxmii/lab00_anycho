@@ -73,9 +73,9 @@ int indexOfMin(int *a, int n) {
 //  swap the values of a[i] and a[j]
 
 void swap(int *a, int i, int j) {
-  int num=a[i];
+  int temp=a[i];
   a[i]=a[j];
-  a[j]=num;
+  a[j]=temp;
   // save the old value of a[i] in a variable 
   // make new value of a[i] be the old value of a[j]
   // make new value of a[j] be the old saved value of a[i]
